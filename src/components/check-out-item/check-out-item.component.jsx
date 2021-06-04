@@ -9,9 +9,9 @@ const CheckoutItem = ({cartItem,removeItems, removeItem, addItems}) => {
     const {imageUrl, name, price, quantity} = cartItem;
     return(
     <div className="checkout-item">
-        <dive className="image-container">
+        <div className="image-container">
             <img src={imageUrl} alt='item'/>
-        </dive>
+        </div>
         <span className="name">{name}</span>
         <span className="quantity">
             <div className="arrow" onClick={() => removeItem(cartItem)}>&#10094;</div>
